@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+pydantic
+groq
+faiss-cpu
+sentence-transformers
+beautifulsoup4
+requests
+httpx
+pytest
+pytest-asyncio
+python-dotenv
+numpy
+scikit-learn
