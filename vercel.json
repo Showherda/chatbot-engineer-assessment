@@ -1,0 +1,32 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "main.py",
+            "use": "@vercel/python",
+            "config": {
+                "maxLambdaSize": "250mb"
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "main.py"
+        }
+    ],
+    "functions": {
+        "main.py": {
+            "maxDuration": 30,
+            "memory": 1024
+        }
+    },
+    "env": {
+        "GROQ_API_KEY": "@groq_api_key"
+    },
+    "build": {
+        "env": {
+            "GROQ_API_KEY": "@groq_api_key"
+        }
+    }
+}

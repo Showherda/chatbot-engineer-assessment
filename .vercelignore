@@ -1,0 +1,30 @@
+# Ignore cache and temporary files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+.env
+
+# Ignore test files
+tests/
+test_*.py
+*_test.py
+pytest.ini
+
+# Ignore development files
+.git/
+.gitignore
+README.md
+.vscode/
+.idea/
+
+<!-- # Ignore large data files that might cause deployment issues
+data/
+*.sqlite
+*.faiss
+*.pkl -->
+
+# Ignore scrapers if not needed for production
+scrapers/
